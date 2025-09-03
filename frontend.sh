@@ -1,11 +1,26 @@
 #!/bin/bash
 
+# dnf install nginx -y  
+# cp proxy.conf /etc/nginx/default.d/expense.conf
+# systemctl enable nginx
+# systemctl start nginx
+# rm -rf /usr/share/nginx/html/* 
+# curl -o /tmp/frontend.zip https://expense-web-app.s3.amazonaws.com/frontend.zip
+# cd /usr/share/nginx/html
+# unzip /tmp/frontend.zip
+# systemctl restart nginx 
+# systemctl status nginx  
+
 dnf install nginx -y  
-systemctl enable nginx
-systemctl start nginx
-rm -rf /usr/share/nginx/html/* 
+cp proxy.conf /etc/nginx/default.d/expense.conf 
+systemctl enable nginx    
+rm -rf /usr/share/nginx/html/*   
 curl -o /tmp/frontend.zip https://expense-web-app.s3.amazonaws.com/frontend.zip
-cd /usr/share/nginx/html
+cd /usr/share/nginx/html 
 unzip /tmp/frontend.zip
+pwd
+ls -ltr
+
 systemctl restart nginx 
-systemctl status nginx  
+
+echo "** Frontend Installation Is Completed **"
