@@ -1,4 +1,4 @@
-# #!/bin/bash
+#!/bin/bash
 
 # dnf module list 
 # dnf module disable nodejs -y

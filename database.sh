@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 dnf install mysql-server -y
 systemctl enable mysqld 
