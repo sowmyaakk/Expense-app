@@ -12,7 +12,7 @@ npm install
 chmod -R 775 /app
 chown -R expense:expense /app
 dnf install mysql-server -y
-mysql -h 172.31.34.99 -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h 172.31.39.58 -uroot -pExpenseApp@1 < /app/schema/backend.sql
 systemctl daemon-reload
 systemctl enable backend 
 systemctl start backend 
